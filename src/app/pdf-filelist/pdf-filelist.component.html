@@ -1,0 +1,12 @@
+<div class="card mt-3">
+<div class="card-header">List of Files</div>
+<ul
+  class="list-group list-group-flush"
+  *ngFor="let file of fileInfo| async">
+  <li class="list-group-item">
+    <a routerLink="/" (click)="navigate(file.id)">{{file.name}}</a>
+
+  </li>
+
+</ul>
+</div>
