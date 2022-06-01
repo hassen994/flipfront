@@ -29,11 +29,5 @@ export class FileUploadService {
   getPages(id: string): Observable<any>{
     return this.http.get(this.baseUrl + 'pages/' + id);
   }
-  urlList(id: string): string[]{
-    this.getPages(id).subscribe(data =>{
-      this.page = data;
 
-    })
-    return [];
-  }
 }

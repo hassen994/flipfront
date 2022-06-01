@@ -1,7 +1,9 @@
-
 <div id="book" class="al"  >
-  <div class="my-page"  >
-
+  <div class="my-page" #pages *ngFor="let p of pageInfo| async"  >
+    <img [src]="p.url"
+    width="456"
+    height="657"
+    >
   </div>
 </div>
 
